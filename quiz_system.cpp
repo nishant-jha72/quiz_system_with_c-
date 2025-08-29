@@ -1,10 +1,10 @@
-
 #include <iostream>
 #include <string>
 #include <mysql_connection.h>
 #include <mysql/mysql.h>
 #include <cstring>
 #include <limits>
+#include<stdlib.h>
 using namespace std;
 class Games
 {
@@ -216,6 +216,7 @@ public:
                     }
                 }
                 update_data(uid, score);
+                system("clear");
                 cout << "YOUR SCORE :- " <<  score << endl;
             }
         }
@@ -317,14 +318,15 @@ int main() {
 
         int choice;
         cin >> choice;
-
+        system("clear");
         switch (choice) {
             case 1:
                 int user_inp_1;
                 cout << "1. Display Rule " << endl;
-                cout << "1. Play Games " << endl;
+                cout << "2. Play Games " << endl;
                 cout << "3. Exit.  " << endl;
                 cin >> user_inp_1;
+                system("claer");
                 switch(user_inp_1) {
                     case 1 : 
                     game.displayRule();
@@ -361,6 +363,7 @@ int main() {
                 cout << "6. Back to Main Menu" << endl;
                 cout << "Enter your choice: ";
                 cin >> adminChoice;
+                system("clear");
                 }
                 else {
                     cout << "Wrong password enterd :- " << endl;
@@ -419,5 +422,6 @@ int main() {
                 cout << "Invalid choice! Try again." << endl;
         }
     }
+
     return 0;
 }

@@ -81,8 +81,16 @@ Practice error handling with MySQL in C++
 
 Build a foundation for larger user management systems
 
-Author
-Nishant Jha
+Added clear screen Function 
 
-yaml
-Copy code
+``` bash
+IF You Are In window use
+
+system("clr");
+
+if you are in linux , Ubuntu use
+
+system("clear");
+```
+
+DevLoped By Nishant Jha

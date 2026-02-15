@@ -93,4 +93,4 @@ if you are in linux , Ubuntu use
 system("clear");
 ```
 
-DevLoped By Nishant Jha
+DevLoped By Nishant Jha using C++ 
